@@ -6,7 +6,7 @@ export interface Member {
   age: number;
   photoUrl: string;
   knownAs: string;
-  create: Date;
+  created: Date;
   lastActive: Date;
   gender: string;
   introduction: string;
