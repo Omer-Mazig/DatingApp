@@ -1,5 +1,6 @@
 .card-img-wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 .card img {
@@ -12,4 +13,22 @@
   transform: scale(1.2, 1.2);
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
+}
+
+.member-icon {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+}
+
+.card-img-wrapper:hover .member-icon {
+  bottom: 0;
+  opacity: 1;
+}
+
+.animate {
+  transition: all 0.3s ease-in-out;
 }
